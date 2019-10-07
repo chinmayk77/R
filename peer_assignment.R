@@ -1,3 +1,5 @@
+## makeCacheMatrix creates and returns a list of functions
+
 makeCacheMatrix <- function(x = numeric()) 
 {
     i <- NULL
@@ -15,6 +17,9 @@ i <- inverse
        sinv = sinv,
        ginv = ginv)
 }
+
+## cacheSolve calcluates the inverse of the matrix created in makeCacheMatrix
+
 cacheSolve <- function(x, ...) 
 {
   i <- x$ginv()
